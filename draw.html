@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> &lt;甜餅組&gt;&nbsp;造型糖塑—畫糖</title>
+	<link rel="shortcut icon" type="image/x-icon" href="icon.ico">
+	<style>
+	
+		@font-face{
+  			font-family: 'STZ';
+  			src: local("STZhongsong"),
+			url('STZhongsong.woff') format("woff"),
+    		url('STZhongsong.ttf') format("opentype"),
+    		url('STZhongsong.eot') format("embedded-opentype");
+		}
+		body {
+  			margin:0;
+		}
+		
+		
+		
+		.head{
+			position: relative;
+			width: 100%;
+			background-color: #FB8176;
+		}
+		
+		.eye{
+			position: flex;
+  			float: left;
+		}
+		.eye .left, .eye .right{
+			display: inline-block;
+			
+		}
+		
+		.logo{
+			height: 20vh;
+			text-align: left;
+			margin: 20px 20px 0px 30px;
+			backface-color: transparent; 
+		}
+		.logo:hover{
+			transition: all 0.2s ease;
+			background-color: #D0EEEC;
+		}
+		.project{
+			position: static;
+			display: inline-grid;
+			font-family: STZ;
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+			font-size: 5em;
+			word-wrap: nowrap;
+			text-align: center;
+		}
+		
+		.Hleft{
+			display:inline-block;
+		}
+		.Hright{
+			vertical-align: bottom;
+			float: right;
+			padding: 20px;
+			font-family: STZ;
+			text-decoration: none;
+			color: black;
+			font-weight: bold;
+		}
+		
+		.head:after{
+  			content: "";
+  			display: table;
+  			clear: both;
+			text-decoration: none;
+		}
+		
+		
+		.nav{
+			border-collapse: collapse;
+			position: relative;
+			font-family: STZ;
+			font-size: 24px;
+			width: 100%;
+			background-color: #F2B1AB;
+  			bottom: 0;
+  			left: 0;
+			padding: 0px 0px 0px 10px;
+			margin: 0px 0px 0px -10px;
+		}
+		.dropdown, .drop, .droptent a{
+			font-family: STZ;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		
+		.nav li:hover{
+			transition: all 0.2s ease;
+			background-color: #D0EEEC;
+			color:black;
+		}
+		.nav span{
+			font-weight: bold;
+			border-radius: 30px;
+			font-family: STZ;
+			padding: 10px 60px 10px 60px;
+			background-color: #D0EEEC;
+			color: #FB8176;
+		}
+		.nav li:not(span){
+			display: inline-block;
+			font-family: STZ;
+			font-weight: bold;
+			text-align: center;
+			text-decoration: none;
+			background-color: #F2B1AB;
+			padding: 14px 59px 14px 59px;
+		}
+		.nav a{
+			text-decoration: none;
+			color:#ffffff;
+		}
+		
+        .drop:not(.div){
+       		display:inline-block;
+       		margin: 0px 0px 0px 0px;
+			background-color: #F2B1AB;
+			color: #FFFFFF;
+			text-decoration:none;
+			white-space: nowrap;
+			border:none;
+        }
+		
+		.dropdown{
+			font-size: 24px;
+			border: none;
+			text-decoration:none;
+			background-color: Transparent;
+			background-repeat:no-repeat;
+			border: none;
+			color: #FFFFFF;
+			padding: 15px 60px 15px 60px;
+		}
+		.dropdown:hover{
+			padding: 15px 60px 15px 60px;
+			transition: all 0.2s;
+			background-color: #D0EEEC;
+			color:#000000;
+		}
+		
+		.droptent{
+			margin: 0px 0px 0px -20px;
+			position:relative;
+			display: none;
+  			position: absolute;
+			text-align: left;
+		}
+		.droptent a{
+			background-color: #FFFFFF;
+			text-decoration: none;
+			color:black;
+			padding: 20px 128px 20px 40px;
+		}
+		.droptent a:hover{
+			background-color: rgba(249,249,249,0.9);
+			transition: all 0.2s ease;
+  			color: #F2B1AB;
+		}
+		
+		.drop:hover .droptent{
+			padding: 10px 20px 10px 20px;
+ 			display: block;
+		}
+
+		.links{
+			cursor: pointer;
+		}
+		
+		.fav{
+			border-collapse: collapse;
+			font-family: STZ;
+			font-size: 24px;
+			width: 100%;
+			background-color: #FAFAFA;
+			border-color: gray;
+		}
+		.fav a{
+			margin: 0px 10px 0px 10px;
+		}
+		.fav a:hover{
+			transition: all 0.2s ease;
+			background-color: #DDDDDD;
+		}
+			
+	
+		.forums a{
+			display: inline-block;
+			font-family: STZ;
+			text-align: center;
+			list-style-type: none;
+			text-decoration: none;
+			color:#436296;
+			background-color: #FAFAFA;
+			border-left-color: #C0C0C0; 
+			border-right-color: #C0C0C0; 
+			padding: 15px 60px 15px 60px;
+		}
+			
+		
+		.feet{
+			position: relative;
+  			bottom: 0;
+  			left: 0;
+			width: 100%;
+			background-color: #FB8176;
+			height: 100%;
+		}
+		
+		.foot{
+			position: flex;
+  			float: left;
+		}
+		.foot .left, .foot .right{
+			display: inline-block;
+			
+		}
+		
+		.left{
+			left: 150px;
+			text-align: right;
+			padding: 40px 0px 20px 150px;
+		}
+		.left a{
+			width: 100%;
+			font-family: STZ;
+			font-size: 16px; 
+			display: grid;
+			text-align: left;
+			list-style-type: none;
+			text-decoration: none;
+			color: black;
+		}
+		
+		.right{
+			right: 150px;
+			float: right;
+			padding: 40px 150px 20px 0px;
+		}
+		.right a{
+			display: grid;
+			width: 100%;
+			text-align: right;
+			list-style-type: none;
+			text-decoration: none;
+			font-family: STZ;
+			color: black;
+			white-space: normal;
+		}
+		
+		.left a:hover, 	.right a:hover{
+			color:#FAFAFA;
+			transition: all 0.2s ease;
+		}
+		
+		.feet:after{
+  			content: "";
+  			display: table;
+  			clear: both;
+			text-decoration: none;
+		}
+		
+		.bod{
+			align-content: center;
+			background-color: #EDD8DD;
+			background: cover;
+			border-radius: 10px;
+			width: 95%;
+			max-height: auto;
+			margin: 60px auto;
+			padding: 30px 0px 40px 0px;
+		}
+		
+		.tit{
+			font-family: STZ;
+			font-size: 3em;
+			padding: 40px 0px 20px 0px;
+			text-align: left;
+			font-weight: bold;
+			text-allign: left;
+			overflow: hidden;
+		}
+		.tit:after{
+  			content: "";
+  			display: inline-block;
+  			vertical-align: bottom;
+  			width: 100%;
+  			margin-right: -100%;
+  			margin-left: 10px;
+  			border-top: 5px solid;
+			border-color: #FB8176;
+		}
+		
+		.org {
+			padding: 20px 0px 40px 0px;
+			font-size: 1em;
+			width: 90%;
+			margin: auto;
+			font-weight: bold;
+		}
+		.org a{
+			color: #436296;
+			font-family: STZ;
+			text-decoration: none;
+			border-bottom: 1px solid #436296
+		}
+		
+		.menu{
+			font-family: STZ;
+			padding: 10px 20px 5px 0px;
+			width: 300px;
+			background-color: #D0EEEC;
+			border-radius: 30px;
+			margin-left: 50px;
+			text-align: left;
+			font-weight: bold;
+			word-wrap: nowrap;
+		}
+		.menu a{
+			color: black;
+			font-size: 1.25em;
+			text-decoration: none;
+		}
+		.menu li{
+  	text-decoration: none!important;
+		}
+		.menu a:hover{
+			color:#436296;
+			transition: all 0.2s ease;
+		}
+		.metit{
+			font-size: 2em;
+			margin-left: 20px;
+		}
+		
+		.img{
+			font-size: 0.8em;
+			font-weight: bold;
+			margin: 0px 0px 30px 50px;
+			padding: 20px 20px 10px 20px;
+			width: 300px;
+			text-align: center;
+			background-color: #D0EEEC;
+			border-radius: 10px;
+			
+			display: inline-block;
+		}
+		.demo{
+			padding: 0px 0px 0px 0px;
+			margin: 0px 0px 0px 0px;
+			width: 300px;
+			height: 100%;
+			display: inline-block;
+		}
+		
+		.map{
+			font-family: STZ;
+			font-size: 1em;
+			font-weight: bold;
+			padding: 20px 20px 20px 20px;
+			width: 1200px;
+			background-color: #D0EEEC;
+			border-radius: 30px;
+			text-align: center;
+			margin: 20px 0px 20px 0px;
+			border: double;
+			border-color: #436296;
+			border-width: 5px;
+		}
+		h2{
+			font-family: STZ;
+			font-size: 1.5em;
+		}
+		p{
+			font-weight: bold;
+			font-size: 1em;
+		}
+		.link, .link:active, .link:after{
+			font-family: STZ;
+			color: #436296;
+		}
+		
+	
+	</style>
+</head>
+<body>
+	<header class="head">
+		<div class="eye Hleft">
+			<a href="menu.html"><img src="https://i.imgur.com/ahE2no8.png" alt="造型糖塑" class="logo"></a>
+			<center class="project"><div>好吃又好玩的造型糖塑</div></center>
+		</div>
+		<div class="eye Hright">&lt;甜餅組&gt;</div>
+	</header>
+	<nav class="nav">
+		<a href="history.html"><button class="dropdown links">歷史起源</button></a>
+		<a href="Geograph.html"><button class="dropdown links">地方差異</button></a>
+		<div class="drop">
+			<span>各式糖塑</span>
+			<div class="droptent">
+					<p><a href="make.html">塑糖</a></p>
+					<p><a href="Draw.html">畫糖</a></p>
+      				<p><a href="blow.html">吹糖</a></p>
+					<p><a href="other.html">其他</a></p>
+			</div>
+		</div>
+		<a href="job.html"><button class="dropdown links">工作分配</button></a>
+	</nav>
+	
+	
+<div class="bod">
+<div class="menu">
+<div class="metit">目錄</div>
+<ol>
+<li><a href="#p1">簡介</a></li>
+<li><a href="#p2">作法</a></li>
+<li><a href="#p3">職人</a></li>
+<li><a href="#p4">現代傳承</a></li>
+</ol>
+</div>
+<div class="org">	
+<h1 class="tit">糖畫</h1>
+<h2 id="p1">簡介</h2>
+<p>糖畫俗稱「倒糖人兒」、「倒糖餅兒」。糖為原料，以勺子為「筆」、糖稀為「墨」。一個擔子，一頭是加熱用的糖鍋，另一頭是材料和工具，加上一塊大理石板，糖畫藝人便可「走江湖」。糖畫曾廣泛流行於中國南方的重慶市與四川省，之後藝人們又融入皮影、剪紙等造型手法，改為直接手持小銅勺，舀糖液繪出圖案，漸漸發展成為今日的糖畫藝術。</p>
+<p>「糖畫」中有平面糖畫和立體糖畫。平面糖畫較為常見，立體糖畫則是將平面的零件相拼接，創造出更多元的造型。</p>
+	
+
+	<div class="img">
+		<img src="1.jpg" alt="糖畫圖(一)" class="demo">
+		<figcaption>糖畫圖(一)</figcaption>
+	</div>
+	<div class="img">
+		<img src="3.jpg" alt="糖畫圖(二)" class="demo">
+		<figcaption>糖畫圖(二)</figcaption>
+	</div>
+	<div class="img">
+		<img src="6.jpg" alt="糖畫圖(三)" class="demo">
+		<figcaption>糖畫圖(三)</figcaption>
+	</div>
+
+	
+<h2 id="p2">作法</h2>
+<p>畫糖的動作要快，涼了容易凝固。畫糖的每一筆之間不能間斷，會有畫畫筆順的問題。在畫糖畫之前，通常會進行繪畫練習，主要目的是練習筆順和構圖。</p>
+<p>首先要化糖，把準備好的糖塊放在糖鍋內溶化，用溫火將糖慢慢溶解，不需一直攪動，以免燒焦。</p>
+<p>再來，將糖倒在光滑的銅板上，畫出造型，要注意將圖畫的所有部分連結起來，並在糖未凝固前用鏟子鏟離銅板。</p>
+<p>最後，用一根竹籤沾取少許的熱糖汁，黏在已成形的糖片上，便大功告成。</p>
+	
+	
+<h2 id="p3">職人</h2>
+<h3>糖畫師傅 吳富雄</h3>
+<p><a href="https://zh-tw.facebook.com/people/%E7%95%AB%E7%B3%96%E4%BA%BA-%E5%90%B3%E5%AF%8C%E9%9B%84/100063910335483/" target="_blank" class="link">吳富雄的Facebook</a></p>
+<p><a href="https://www.youtube.com/watch?v=buHzME1CQNA" target="_blank" class="link">吳富雄的Youtube影片介紹</a></p>
+<p>常於熱鬧的香堤大道廣場表演畫糖</p>
+<p>14歲時便跟著父親到處擺攤，一邊看著父親表演畫糖、一邊承接著技術。</p>
+<p>一開始從小型的圖案開始練習，漸漸地越來越複雜、多變。甚至許多畫糖用具都是自己設計、製造。</p>
+<p>吳富雄年輕時，跟著傳統民俗工藝團體到處表演，去了各地的文化中心、文化局、學校，美國、新加坡、加拿大也曾有他畫糖的痕跡。</p>
+<p>吳富雄說：「我沒有特別喜歡哪一個圖案，客人喜歡什麼我就畫什麼。我也沒有在傳承，那有其他人在做。」不過，他依舊常去撐起古樸的攤子，靜靜地畫出一支支栩栩如生的糖畫，或許一生持續不輟地畫糖，便已是對畫糖工藝最大的付出。</p>
+	
+	<div class="img">
+		<img src="7.png" alt="吳富雄(一)" class="demo">
+		<figcaption>吳富雄(一)</figcaption>
+	</div>
+	<div class="img">
+		<img src="8.png" alt="吳富雄(二)" class="demo">
+		<figcaption>吳富雄(二)</figcaption>
+	</div>
+	<div class="img">
+		<img src="9.jpg" alt="吳富雄參加民俗團體" class="demo">
+		<figcaption>吳富雄參加民俗團體</figcaption>
+	</div>
+	
+<h3>「糖畫先生」高曉明</h3>
+	<p><a href="https://zh-tw.facebook.com/mrcandyart/" target="_blank" class="link">糖畫先生的Facebook</a></p>
+<p>自小就對各種手工藝感興趣的高曉明，中學畢業後與一位老師傅學習金屬線手藝，製作珠寶飾品，想以此維生，卻遭到家人反對。考上大學一個學期後，他決定退學，全心投入自己熱愛的手工藝事業。</p>
+<p>投身金屬線首飾期間，接觸到另一門手工藝，糖畫，令他萌生想學習的念頭。</p>
+<p>透過朋友，與一位在河南的糖畫師傅拜師學藝。之後，他將老師傅留下的工具重新打造，做出一套漂亮的銅製工具，適合在表演場合使用，並再次拜師，繼續增進自己的手藝。</p>
+<p>高曉明結合現代的行銷技巧，為自己建立品牌與形象包裝。「糖畫先生」便是他為自己所建立的形象，一些工具或佈置裝飾，甚至一個簡單插糖畫的底座，都花了許多心思，他也經常接受不同媒體的訪問，並積極參與各類的大型活動、工作坊。為了使糖畫作品的顏色更為豐富，不容易融化，他更特別調配了自己獨有的糖漿，運用糖畫的靈活性設計出豐富的圖案，不只侷限在傳統的設計中。</p>
+
+	<div class="img">
+		<img  src="12.jpg" alt="高曉明(一)" class="demo">
+		<figcaption>高曉明(一)</figcaption>
+	</div>
+	<div class="img">
+		<img src="13.jpg" alt="高曉明(二)" class="demo">
+		<figcaption>高曉明(二)</figcaption>
+	</div>
+	<div class="img">
+		<img src="15.jpg" alt="高曉明(三)" class="demo">
+		<figcaption>高曉明(三)</figcaption>
+	</div>
+	
+	
+<h2 id="p4">現代傳承</h2>
+<h3>陳文斌 師傅</h3>
+<p><a href="https://www.facebook.com/people/%E7%B3%96%E7%95%AB%E8%81%B7%E4%BA%BA/100063943800929/" target="_blank"  class="link">糖畫職人的Facebook</a></p>
+<p><a href="https://www.youtube.com/watch?v=wje-SHbMSa0" target="_blank" class="link">糖畫職人的Youtube影片</a></p>
+<p>曾是工程師，後轉職為畫糖師傅。結合自身工程師的專業，研發糖藝筆，致力於推廣糖畫。除了街頭的畫糖展演，也於各地講座分享演講，並開設到府教學課程—糖畫職人到你家，希望糖畫不要只是回憶。</p>
+	
+	<div class="img">
+		<img src="20.jpeg" alt="教學課程(一)" class="demo">
+		<figcaption>教學課程(一)</figcaption>
+	</div>
+	<div class="img">
+		<img src="23.jpg" alt="教學課程(二)" class="demo">
+		<figcaption>教學課程(二)</figcaption>
+	</div>
+	<div class="img">
+		<img src="25.jpg" alt="街頭展演" class="demo">
+		<figcaption>街頭展演</figcaption>
+	</div>
+
+</div></div>
+	
+	<nav class="fav">
+		<center>
+			<div class="forums">
+				<a href="Review.html" target="_blank"><li>Review</li></a>
+				<a href="Reserve.html" target="_blank"><li>Reserve</li></a>
+				<a href="Report.html" target="_blank"><li>Report</li></a>
+			</div>
+		</center>
+	</nav>
+	
+	<footer class="feet">
+		<div class="foot left">
+			<a href="job.html" target="_blank"><li>幼一甲002&emsp;邱昱榕&emsp;111108002</li></a>
+			<a href="job.html" target="_blank"><li>心一甲049&emsp;林芷誼&emsp;111111049</li></a>
+			<a href="job.html" target="_blank"><li>藝一乙001&emsp;吳靖童&emsp;111115001</li></a>
+			<a href="job.html" target="_blank"><li>藝一乙014&emsp;曾&emsp;晨&emsp;111115014</li></a>
+			<a href="job.html" target="_blank"><li>藝一乙030&emsp;陳禹彤&emsp;111115030</li></a>
+		</div>
+		<div class="foot right">
+			<br>
+			<a href="https://goo.gl/maps/mQANWKQYrvqQiWWZ7"  target="_blank">地址：106台北市大安區和平東路二段134號國立臺北教育大學圖書館</a>
+			<a>電話號碼：02-6639-6688</a>
+			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">powered by sugar.&nbsp;&reg;</a>
+		</div>
+
+	</footer>	
+</body>
+</html>

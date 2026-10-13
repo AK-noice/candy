@@ -1,0 +1,539 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> &lt;甜餅組&gt;&nbsp;造型糖塑—回饋問卷</title>
+	<link rel="shortcut icon" type="image/x-icon" href="icon.ico">
+	<style>
+	
+		@font-face{
+  			font-family: 'STZ';
+  			src: local("STZhongsong"),
+			url('STZhongsong.woff') format("woff"),
+    		url('STZhongsong.ttf') format("opentype"),
+    		url('STZhongsong.eot') format("embedded-opentype");
+		}
+		body {
+  			margin:0;
+		}
+		
+		
+		
+		.head{
+			position: relative;
+			width: 100%;
+			background-color: #FB8176;
+		}
+		
+		.eye{
+			position: flex;
+  			float: left;
+		}
+		.eye .left, .eye .right{
+			display: inline-block;
+			
+		}
+		
+		.logo{
+			height: 20vh;
+			text-align: left;
+			margin: 20px 20px 0px 30px;
+			backface-color: transparent; 
+		}
+		.logo:hover{
+			transition: all 0.2s ease;
+			background-color: #D0EEEC;
+		}
+		.project{
+			position: static;
+			display: inline-grid;
+			font-family: STZ;
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+			font-size: 5em;
+			word-wrap: nowrap;
+			text-align: center;
+		}
+		
+		.Hleft{
+			display:inline-block;
+		}
+		.Hright{
+			vertical-align: bottom;
+			float: right;
+			padding: 20px;
+			font-family: STZ;
+			text-decoration: none;
+			color: black;
+			font-weight: bold;
+		}
+		
+		.head:after{
+  			content: "";
+  			display: table;
+  			clear: both;
+			text-decoration: none;
+		}
+		
+		
+		.nav{
+			border-collapse: collapse;
+			position: relative;
+			font-family: STZ;
+			font-size: 24px;
+			width: 100%;
+			background-color: #F2B1AB;
+  			bottom: 0;
+  			left: 0;
+			padding: 0px 0px 0px 10px;
+			margin: 0px 0px 0px -10px;
+		}
+		.dropdown, .drop, .droptent a{
+			font-family: STZ;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		
+		.nav li:hover{
+			transition: all 0.2s ease;
+			background-color: #D0EEEC;
+			color:black;
+		}
+		.nav span{
+			font-weight: bold;
+			border-radius: 30px;
+			font-family: STZ;
+			padding: 10px 60px 10px 60px;
+			background-color: #D0EEEC;
+			color: #FB8176;
+		}
+		.nav li:not(span){
+			display: inline-block;
+			font-family: STZ;
+			font-weight: bold;
+			text-align: center;
+			text-decoration: none;
+			background-color: #F2B1AB;
+			padding: 14px 59px 14px 59px;
+		}
+		.nav a{
+			text-decoration: none;
+			color:#ffffff;
+		}
+		
+        .drop:not(.div){
+       		display:inline-block;
+       		margin: 0px 0px 0px 0px;
+			background-color: #F2B1AB;
+			color: #FFFFFF;
+			text-decoration:none;
+			white-space: nowrap;
+			border:none;
+        }
+		
+		.dropdown{
+			font-size: 24px;
+			border: none;
+			text-decoration:none;
+			background-color: Transparent;
+			background-repeat:no-repeat;
+			border: none;
+			color: #FFFFFF;
+			padding: 15px 60px 15px 60px;
+		}
+		.dropdown:hover{
+			padding: 15px 60px 15px 60px;
+			transition: all 0.2s;
+			background-color: #D0EEEC;
+			color:#000000;
+		}
+		
+		.droptent{
+			margin: -17px 0px 0px -20px;
+			position:relative;
+			display: none;
+  			position: absolute;
+			text-align: left;
+		}
+		.droptent a{
+			background-color: #FFFFFF;
+			text-decoration: none;
+			color:black;
+			padding: 20px 128px 20px 40px;
+		}
+		.droptent a:hover{
+			background-color: rgba(249,249,249,0.9);
+			transition: all 0.2s ease;
+  			color: #F2B1AB;
+		}
+		
+		.drop:hover .droptent{
+			padding: 10px 20px 10px 20px;
+ 			display: block;
+		}
+		
+		.links{
+			cursor: pointer;
+		}
+		
+		.fav{
+			border-collapse: collapse;
+			font-family: STZ;
+			font-size: 24px;
+			width: 100%;
+			background-color: #FAFAFA;
+			border-color: gray;
+		}
+		.fav a{
+			margin: 0px 10px 0px 10px;
+		}
+		.fav a:hover{
+			transition: all 0.2s ease;
+			background-color: #DDDDDD;
+		}
+			
+	
+		.forums a{
+			display: inline-block;
+			font-family: STZ;
+			text-align: center;
+			list-style-type: none;
+			text-decoration: none;
+			color:#436296;
+			background-color: #FAFAFA;
+			border-left-color: #C0C0C0; 
+			border-right-color: #C0C0C0; 
+			padding: 15px 60px 15px 60px;
+		}
+			
+		p a{
+			font-size: 1em;
+			color: #436296;
+		}
+		
+		.feet{
+			position: relative;
+  			bottom: 0;
+  			left: 0;
+			width: 100%;
+			background-color: #FB8176;
+			height: 100%;
+		}
+		
+		.foot{
+			position: flex;
+  			float: left;
+		}
+		.foot .left, .foot .right{
+			display: inline-block;
+			
+		}
+		
+		.left{
+			left: 150px;
+			text-align: right;
+			padding: 40px 0px 20px 150px;
+		}
+		.left a{
+			width: 100%;
+			font-family: STZ;
+			font-size: 16px; 
+			display: grid;
+			text-align: left;
+			list-style-type: none;
+			text-decoration: none;
+			color: black;
+		}
+		
+		.right{
+			right: 150px;
+			float: right;
+			padding: 40px 150px 20px 0px;
+		}
+		.right a{
+			display: grid;
+			width: 100%;
+			text-align: right;
+			list-style-type: none;
+			text-decoration: none;
+			font-family: STZ;
+			color: black;
+			white-space: normal;
+		}
+		
+		.left a:hover, 	.right a:hover{
+			color:#FAFAFA;
+			transition: all 0.2s ease;
+		}
+		
+		.feet:after{
+  			content: "";
+  			display: table;
+  			clear: both;
+			text-decoration: none;
+		}
+		
+		.bod{
+			align-content: center;
+			background-color: #EDD8DD;
+			background: cover;
+			border-radius: 10px;
+			width: 95%;
+			max-height: auto;
+			margin: 60px auto;
+			padding: 0px 0px 40px 0px;
+		}
+		
+		h1{
+			font-family: STZ;
+			font-size: 3em;
+			padding: 20px 0px 20px 0px;
+			text-align: left;
+			font-weight: bold;
+			text-align: left;
+			overflow: hidden;
+		}
+		h1:after{
+  			content: "";
+  			display: inline-block;
+  			vertical-align: bottom;
+  			width: 100%;
+  			margin-right: -100%;
+  			margin-left: 10px;
+  			border-top: 5px solid;
+			border-color: #FB8176;
+		}
+		h2{
+			font-size: 1.8em;
+			padding: 10px 20px;
+			font-family: STZ;
+			text-align: center;
+			background-color: #D0EEEC;
+			border-radius: 30px;
+		}
+		.butt{
+			text-decoration: none;
+			border: none;
+			background: none;
+			background-color: #F2B1AB;
+			padding: 5px 10px;
+			border-radius: 30px;
+			border-color: #FB8176;
+			border-style: dotted;
+			font-weight: bold;
+			font-family:STZ
+		}
+		
+		
+		.org {
+			padding: 20px 0px 40px 0px;
+			font-size: 1em;
+			width: 90%;
+			margin: auto;
+			font-weight: bold;
+			text-align: justify;
+		}
+		.org a{
+			color: #436296;
+			font-family: STZ;
+			text-decoration: none;
+			border-bottom: 1px solid #436296
+		}
+		
+		.menu{
+			font-family: STZ;
+			padding: 10px 20px 5px 0px;
+			width: 300px;
+			background-color: #D0EEEC;
+			border-radius: 30px;
+			margin-left: 50px;
+			text-align: left;
+			font-weight: bold;
+			word-wrap: nowrap;
+		}
+		.menu a{
+			color: black;
+			font-size: 1.25em;
+			text-decoration: none;
+		}
+		.menu a:hover{
+			color:#436296;
+			transition: all 0.2s ease;
+		}
+		.metit{
+			font-size: 2em;
+			margin-left: 20px;
+		}
+		
+		.img{
+			float: right;
+			font-size: 0.8em;
+			font-weight: bold;
+			margin: 0px 0px 30px 50px;
+			padding: 20px 20px 10px 20px;
+			width: 300px;
+			text-align: center;
+			background-color: #D0EEEC;
+			border-radius: 10px;
+		}
+		.demo{
+			padding: 0px 0px 0px 0px;
+			margin: 0px 0px 0px 0px;
+			width: 300px;
+			height: 100%;
+		}
+		
+		.map{
+			font-family: STZ;
+			font-size: 1em;
+			font-weight: bold;
+			padding: 20px 20px 20px 20px;
+			width: 1200px;
+			background-color: #D0EEEC;
+			border-radius: 30px;
+			text-align: center;
+			margin: 20px 0px 20px 0px;
+			border: double;
+			border-color: #436296;
+			border-width: 5px;
+		}
+		p{
+			margin: 30px 20px;
+			font-size: 1.5em;
+			word-spacing: 30px;
+			word-wrap: nowrap;
+		}
+		.title{
+			font-weight: bold;
+			font-family: STZ;
+			text-align: left;
+			border-bottom: 2px solid #FB8176;
+			width: 20%;
+		}
+		.titlle:after{
+  			content: "";
+  			display: inline-block;
+  			vertical-align: bottom;
+  			width: 100%;
+  			margin-right: -100%;
+  			margin-left: 10px;
+  			border-top: 5px solid;
+			border-color: #FB8176;
+		}
+		h1:after{
+  			content: "";
+  			display: inline-block;
+  			vertical-align: bottom;
+  			width: 100%;
+  			margin-right: -100%;
+  			margin-left: 10px;
+  			border-top: 5px solid;
+			border-color: #FB8176;
+		}
+		
+	</style>
+</head>
+	
+	
+<body>
+	<header class="head">
+		<div class="eye Hleft">
+			<a href="menu.html"><img src="https://i.imgur.com/ahE2no8.png" alt="造型糖塑" class="logo"></a>
+			<center class="project"><div>好吃又好玩的造型糖塑</div></center>
+		</div>
+		<div class="eye Hright">&lt;甜餅組&gt;</div>
+	</header>
+	
+	<nav class="nav">
+		<span>Review</span>
+		<a href="Reserve.html"><button class="dropdown links">Reserve</button></a>
+		<a href="Report.html"><button class="dropdown links">Report</button></a>
+	</nav>
+	
+	<div class="bod"><div class="org">
+<h1>回饋問卷</h1>
+<center>
+<h2>認識那麼多糖塑後，請不吝給我們一些回饋吧！</h2>
+<form action="" method="post">
+<p><span class="title">&emsp;&emsp;覺得最有趣的：&emsp;&emsp;</span><br>
+      	<label><input type="radio" id="塑1" name="1" value="1" />塑糖</label>
+      	<label><input type="radio" id="畫1" name="1" value="2" />畫糖</label>
+      	<label><input type="radio" id="吹1" name="1" value="3" />吹糖</label>
+      	<label><input type="radio" id="其1" name="1" value="4" />其他</label>
+</p>
+<p><span class="title">&emsp;&emsp;最想嘗試做看看的：&emsp;&emsp;</span><br>
+      	<label><input type="radio" id="塑2" name="2" value="1" />塑糖</label>
+      	<label><input type="radio" id="畫2" name="2" value="2" />畫糖</label>
+      	<label><input type="radio" id="吹2" name="2" value="3" />吹糖</label>
+      	<label><input type="radio" id="其2" name="2" value="4" />其他</label>
+</p>
+<p><span class="title">&emsp;&emsp;最想嘗試吃看看的：&emsp;&emsp;</span><br>
+      	<label><input type="radio" id="塑3" name="3" value="1" />塑糖</label>
+      	<label><input type="radio" id="畫3" name="3" value="2" />畫糖</label>
+      	<label><input type="radio" id="吹3" name="3" value="3" />吹糖</label>
+      	<label><input type="radio" id="其3" name="3" value="4" />其他</label>
+</p>
+<p><span class="title">&emsp;&emsp;整體架構滿意度：&emsp;&emsp;</span><br>
+      	<label><input type="radio" id="11" name="S" value="1" />1分</label>
+      	<label><input type="radio" id="12" name="S" value="2" />2分</label>
+      	<label><input type="radio" id="13" name="S" value="3" />3分</label>
+      	<label><input type="radio" id="14" name="S" value="4" />4分</label>
+      	<label><input type="radio" id="15" name="S" value="5" />5分</label>
+</p>
+<p><span class="title">&emsp;&emsp;文字內容滿意度：&emsp;&emsp;</span><br>
+      	<label><input type="radio" id="21" name="S1" value="1" />1分</label>
+      	<label><input type="radio" id="22" name="S1" value="2" />2分</label>
+      	<label><input type="radio" id="23" name="S1" value="3" />3分</label>
+      	<label><input type="radio" id="24" name="S1" value="4" />4分</label>
+      	<label><input type="radio" id="25" name="S1" value="5" />5分</label>
+</p>
+<p><span class="title">&emsp;&emsp;美編排版滿意度：&emsp;&emsp;</span><br>
+      	<label><input type="radio" id="31" name="S2" value="1" />1分</label>
+      	<label><input type="radio" id="32" name="S2" value="2" />2分</label>
+      	<label><input type="radio" id="33" name="S2" value="3" />3分</label>
+      	<label><input type="radio" id="34" name="S2" value="4" />4分</label>
+      	<label><input type="radio" id="35" name="S2" value="5" />5分</label>
+</p>
+<p><span class="title">&emsp;&emsp;網頁使用簡易度：&emsp;&emsp;</span><br>
+      	<label><input type="radio" id="41" name="S3" value="1" />1分</label>
+      	<label><input type="radio" id="42" name="S3" value="2" />2分</label>
+      	<label><input type="radio" id="43" name="S3" value="3" />3分</label>
+      	<label><input type="radio" id="44" name="S3" value="4" />4分</label>
+      	<label><input type="radio" id="45" name="S3" value="5" />5分</label>
+</p>
+<p>
+    <input type="submit" value="送出問卷" class="butt">&nbsp;&nbsp;
+    <input type="reset" value="重新填寫" class="butt">
+</p>
+</form>
+	<center>
+		<p><a href="menu.html">回到首頁</a></p>
+	</center>
+<h2>感謝您的寶貴意見！</h2>
+	
+</center>
+</div></div>
+	
+	<footer class="feet">
+		<div class="foot left">
+			<a href="job.html" target="_blank"><li>幼一甲002&emsp;邱昱榕&emsp;111108002</li></a>
+			<a href="job.html" target="_blank"><li>心一甲049&emsp;林芷誼&emsp;111111049</li></a>
+			<a href="job.html" target="_blank"><li>藝一乙001&emsp;吳靖童&emsp;111115001</li></a>
+			<a href="job.html" target="_blank"><li>藝一乙014&emsp;曾&emsp;晨&emsp;111115014</li></a>
+			<a href="job.html" target="_blank"><li>藝一乙030&emsp;陳禹彤&emsp;111115030</li></a>
+		</div>
+		<div class="foot right">
+			<br>
+			<a href="https://goo.gl/maps/mQANWKQYrvqQiWWZ7"  target="_blank">地址：106台北市大安區和平東路二段134號國立臺北教育大學圖書館</a>
+			<a>電話號碼：02-6639-6688</a>
+			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">powered by sugar.&nbsp;&reg;</a>
+		</div>
+
+	</footer>
+	
+	
+	
+</body>
+	
+</html>

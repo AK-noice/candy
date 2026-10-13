@@ -1,0 +1,42 @@
+
+<colours>
+鵝黃色 #F7DEBD  高光
+淺橘色 #F2B1AB	按鈕
+珊瑚色 #FB8176	頭腳
+淺藍色 #D0EEEC	反藍
+淺紫色 #EDD8DD	網頁框框
+#436296
+
+
+<header background>
+https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
+
+https://i.imgur.com/SjWA0ZL.jpeg
+
+
+<Color palette>
+https://i.pinimg.com/564x/2f/04/47/2f044728ee02105a7866da7e63a30f98.jpg
+
+
+<header logo>
+
+<candy demo>
+https://i.imgur.com/QyYGCiA.jpg
+
+
+才子
+https://bkimg.cdn.bcebos.com/pic/d833c895d143ad4bd113b4288e574dafa40f4afba884
+
+
+map
+https://imgur.com/a/OhGXn3O
+https://i.imgur.com/96xUl4N.png
+
+
+
+
+http://www.image-map.net/
+https://zh.m.wikipedia.org/zh-tw/%E7%B3%96%E5%A1%91
+https://baike.baidu.hk/item/%E7%B3%96%E5%A1%91/9848584
+
+

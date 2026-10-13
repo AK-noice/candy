@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title> &lt;甜餅組&gt;&nbsp;造型糖塑—其他種類</title>
+	<link rel="shortcut icon" type="image/x-icon" href="icon.ico">
+	<style>
+		@font-face{
+  			font-family: 'STZ';
+  			src: local("STZhongsong"),
+			url('STZhongsong.woff') format("woff"),
+    		url('STZhongsong.ttf') format("opentype"),
+    		url('STZhongsong.eot') format("embedded-opentype");
+		}
+		body {
+  			margin:0;
+		}
+		
+		
+		
+		.head{
+			position: relative;
+			width: 100%;
+			background-color: #FB8176;
+		}
+		
+		.eye{
+			position: flex;
+  			float: left;
+		}
+		.eye .left, .eye .right{
+			display: inline-block;
+			
+		}
+		
+		.logo{
+			height: 20vh;
+			text-align: left;
+			margin: 20px 20px 0px 30px;
+			backface-color: transparent; 
+		}
+		.logo:hover{
+			transition: all 0.2s ease;
+			background-color: #D0EEEC;
+		}
+		.project{
+			position: static;
+			display: inline-grid;
+			font-family: STZ;
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+			font-size: 5em;
+			word-wrap: nowrap;
+			text-align: center;
+		}
+		
+		.Hleft{
+			display:inline-block;
+		}
+		.Hright{
+			vertical-align: bottom;
+			float: right;
+			padding: 20px;
+			font-family: STZ;
+			text-decoration: none;
+			color: black;
+			font-weight: bold;
+		}
+		
+		.head:after{
+  			content: "";
+  			display: table;
+  			clear: both;
+			text-decoration: none;
+		}
+		
+		
+		.nav{
+			border-collapse: collapse;
+			position: relative;
+			font-family: STZ;
+			font-size: 24px;
+			width: 100%;
+			background-color: #F2B1AB;
+  			bottom: 0;
+  			left: 0;
+			padding: 0px 0px 0px 10px;
+			margin: 0px 0px 0px -10px;
+		}
+		.dropdown, .drop, .droptent a{
+			font-family: STZ;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		
+		.nav li:hover{
+			transition: all 0.2s ease;
+			background-color: #D0EEEC;
+			color:black;
+		}
+		.nav span{
+			font-weight: bold;
+			border-radius: 30px;
+			font-family: STZ;
+			padding: 10px 60px 10px 60px;
+			background-color: #D0EEEC;
+			color: #FB8176;
+		}
+		.nav li:not(span){
+			display: inline-block;
+			font-family: STZ;
+			font-weight: bold;
+			text-align: center;
+			text-decoration: none;
+			background-color: #F2B1AB;
+			padding: 14px 59px 14px 59px;
+		}
+		.nav a{
+			text-decoration: none;
+			color:#ffffff;
+		}
+		
+        .drop:not(.div){
+       		display:inline-block;
+       		margin: 0px 0px 0px 0px;
+			background-color: #F2B1AB;
+			color: #FFFFFF;
+			text-decoration:none;
+			white-space: nowrap;
+			border:none;
+        }
+		
+		.dropdown{
+			font-size: 24px;
+			border: none;
+			text-decoration:none;
+			background-color: Transparent;
+			background-repeat:no-repeat;
+			border: none;
+			color: #FFFFFF;
+			padding: 15px 60px 15px 60px;
+		}
+		.dropdown:hover{
+			padding: 15px 60px 15px 60px;
+			transition: all 0.2s;
+			background-color: #D0EEEC;
+			color:#000000;
+		}
+		
+		.droptent{
+			margin: 0px 0px 0px -20px;
+			position:relative;
+			display: none;
+  			position: absolute;
+			text-align: left;
+		}
+		.droptent a{
+			background-color: #FFFFFF;
+			text-decoration: none;
+			color:black;
+			padding: 20px 128px 20px 40px;
+		}
+		.droptent a:hover{
+			background-color: rgba(249,249,249,0.9);
+			transition: all 0.2s ease;
+  			color: #F2B1AB;
+		}
+		
+		.drop:hover .droptent{
+			padding: 10px 20px 10px 20px;
+ 			display: block;
+		}
+		
+		
+		.links{
+			cursor: pointer;
+		}
+		
+		.fav{
+			border-collapse: collapse;
+			font-family: STZ;
+			font-size: 24px;
+			width: 100%;
+			background-color: #FAFAFA;
+			border-color: gray;
+		}
+		.fav a{
+			margin: 0px 10px 0px 10px;
+		}
+		.fav a:hover{
+			transition: all 0.2s ease;
+			background-color: #DDDDDD;
+		}
+			
+	
+		.forums a{
+			display: inline-block;
+			font-family: STZ;
+			text-align: center;
+			list-style-type: none;
+			text-decoration: none;
+			color:#436296;
+			background-color: #FAFAFA;
+			border-left-color: #C0C0C0; 
+			border-right-color: #C0C0C0; 
+			padding: 15px 60px 15px 60px;
+		}
+			
+		
+		.feet{
+			position: relative;
+  			bottom: 0;
+  			left: 0;
+			width: 100%;
+			background-color: #FB8176;
+			height: 100%;
+		}
+		
+		.foot{
+			position: flex;
+  			float: left;
+		}
+		.foot .left, .foot .right{
+			display: inline-block;
+			
+		}
+		
+		.left{
+			left: 150px;
+			text-align: right;
+			padding: 40px 0px 20px 150px;
+		}
+		.left a{
+			width: 100%;
+			font-family: STZ;
+			font-size: 16px; 
+			display: grid;
+			text-align: left;
+			list-style-type: none;
+			text-decoration: none;
+			color: black;
+		}
+		
+		.right{
+			right: 150px;
+			float: right;
+			padding: 40px 150px 20px 0px;
+		}
+		.right a{
+			display: grid;
+			width: 100%;
+			text-align: right;
+			list-style-type: none;
+			text-decoration: none;
+			font-family: STZ;
+			color: black;
+			white-space: normal;
+		}
+		
+		.left a:hover, 	.right a:hover{
+			color:#FAFAFA;
+			transition: all 0.2s ease;
+		}
+		
+		.feet:after{
+  			content: "";
+  			display: table;
+  			clear: both;
+			text-decoration: none;
+		}
+		
+		.bod{
+			align-content: center;
+			background-color: #EDD8DD;
+			background: cover;
+			border-radius: 10px;
+			width: 95%;
+			max-height: auto;
+			margin: 60px auto;
+			padding: 30px 0px 40px 0px;
+		}
+		
+		.org {
+			font-size: 1em;
+			width: 90%;
+			margin: auto;
+			font-weight: bold;
+		}
+		.org span{
+			background-color: #F7DEBD;
+			font-family: STZ;
+		}
+		
+		h1{
+			font-family: STZ;
+			font-size: 3em;
+			padding: 40px 0px 20px 0px;
+			text-align: left;
+			font-weight: bold;
+			text-allign: left;
+			overflow: hidden;
+		}
+		h1:after{
+  			content: "";
+  			display: inline-block;
+  			vertical-align: bottom;
+  			width: 100%;
+  			margin-right: -100%;
+  			margin-left: 10px;
+  			border-top: 5px solid;
+			border-color: #FB8176;
+		}
+		
+		h3{
+			padding: 20px 0px 0px 0px;
+			font-size: 2em;
+			width: 90%;
+			margin: auto;
+			font-weight: bold;
+			font-family: STZ;
+		}
+		h3 span{
+			background-color: #F7DEBD;
+		}
+		ol li{
+			padding: 0px 0px 0px 0px;
+			font-size: 1em;
+			width: 90%;
+			margin: auto;
+			font-weight: bold;
+		}
+		main p{
+			padding: 20px 0px 40px 0px;
+			font-size: 1em;
+			width: 90%;
+			margin: auto;
+			font-weight: bold;
+		}
+
+		.menu{
+			font-family: STZ;
+			padding: 10px 20px 5px 0px;
+			width: 300px;
+			background-color: #D0EEEC;
+			border-radius: 30px;
+			margin-left: 50px;
+			text-align: left;
+			font-weight: bold;
+			word-wrap: nowrap;
+		}
+		.menu a{
+			color: black;
+			font-size: 1.25em;
+			text-decoration: none;
+		}
+		.menu a:hover{
+			color:#436296;
+			transition: all 0.2s ease;
+		}
+		.metit{
+			font-size: 2em;
+			margin-left: 20px;
+		}
+		.img{
+			font-size: 0.8em;
+			font-weight: bold;
+			margin: 0px 0px 30px 50px;
+			padding: 20px 20px 10px 20px;
+			width: 300px;
+			text-align: center;
+			background-color: #D0EEEC;
+			border-radius: 10px;
+		}
+		iframe{
+			margin: 10px 0px 30px 50px;
+			padding: 20px 20px 20px 20px;
+			text-align: center;
+			background-color: #D0EEEC;
+			border-radius: 10px;
+		}
+		.demo{
+			padding: 0px 0px 0px 0px;
+			margin: 0px 0px 0px 0px;
+			width: 300px;
+			height: 100%;
+		}
+		.link{
+			color:#436296;
+		}
+	</style>
+</head>
+<body>	
+	<header class="head">
+		<div class="eye Hleft">
+			<a href="menu.html"><img src="https://i.imgur.com/ahE2no8.png" alt="造型糖塑" class="logo"></a>
+			<center class="project"><div>好吃又好玩的造型糖塑</div></center>
+		</div>
+		<div class="eye Hright">&lt;甜餅組&gt;</div>
+	</header>
+	<nav class="nav">
+		<a href="history.html"><button class="dropdown links">歷史起源</button></a>
+		<a href="Geograph.html"><button class="dropdown links">地方差異</button></a>
+		<div class="drop">
+			<span>各式糖塑</span>
+			<div class="droptent">
+					<p><a href="make.html">塑糖</a></p>
+					<p><a href="draw.html">畫糖</a></p>
+      				<p><a href="Blow.html">吹糖</a></p>
+					<p><a href="other.html">其他</a></p>
+			</div>
+		</div>
+		<a href="job.html"><button class="dropdown links">工作分配</button></a>
+	</nav>
+	
+	
+	<main class="bod">
+		<div class="menu">
+			<div class="metit">目錄</div>
+		<ol>
+			<li><a href="#1">龍鬚糖</a></li>
+			<li><a href="#2">糖蔥</a></li>
+			<li><a href="#88">椪糖</a></li>
+			<li><a href="#4">切片糖</a></li>
+		</ol>
+		</div>
+		
+       <div class="org">
+		   
+         <h1 id="1">龍鬚糖</h1>
+		   
+		<div class="img">
+         <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/87413BDD-3FDC-46B9-B52A-BCCD50A999B7/Derivates/55221a4c-5910-453b-b63e-de950153fc78.jpg" width="500px" alt="龍鬚糖圖片" class="demo">
+         <br>
+         <figcaption>&#128314;龍鬚糖</figcaption>
+		</div>
+		   
+         <h3>介紹</h3>
+        <p>    
+            &emsp;&emsp;龍鬚糖又稱龍鬚酥 、麵線糖、銀絲糖，原料為麥芽糖、熟粉、芝麻花生碎。傳統龍鬚糖餡料可以包括砂糖、花生、芝麻和椰絲等。<br>入口及香的甜食，通常不能保存，是中國民間傳統小吃。
+        <br>
+            &emsp;&emsp;相傳為皇帝特有的點心，入口即化、甜而不膩，據說早期是由皇宮後廚精心製作而成，供給皇帝享用，被清朝皇帝賜名龍鬚糖。
+        </p>
+        <h3>作法</h3>
+        <p>
+            &emsp;&emsp;將麥芽在熱水化軟後放入糯米粉盆內反覆搓揉，成8字型摺疊重複拉，直到麥芽糖呈現如白色的髮絲般一條一條的狀態，再包上餡料如花生及芝麻。
+        </p>
+        <h3>製作龍鬚糖影片</h3>
+        <ol>
+            <li>
+                <figcaption>日本職人製作龍鬚糖影片 </figcaption>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yAhGEgN-OCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+       <li> <figcaption>影片來自「廚娘的365日」 </figcaption>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xCIPoPG3gb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+        <li><figcaption>Vtuber兔田佩克拉用HI-CHEW製作龍鬚糖(影片從34:56開始播放)</figcaption>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hRqaoj2WMv0?start=2086" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+    </ol>
+    <h1 id="2">糖蔥</h1>
+	<div class="img"  >
+    	<img src="https://pic.pimg.tw/bluesky7915/1646551898-3349234736-g.png" width="600px" alt="糖蔥的外貌" class="demo">
+	</div>
+    <h3>
+        介紹
+    </h3>
+    <p>
+        &emsp;&emsp;台灣特有的點心，因狀似如蔥，故稱為糖蔥，是老一輩人年幼時的零嘴。由於手藝複雜，現任製作糖蔥師傅台灣僅剩十餘人。<br>
+        來源已不可考，據說是日治時代台灣生產的蔗糖必須運往日本農民為了保留蔗糖，因此將蔗糖做成蔥的模樣。
+    </p>
+    <h3>作法</h3>
+    <p>&emsp;&emsp;將白砂糖加入等比例的水，用120度的水煮沸成糖漿，在使其冷卻成糖膏；以長約一尺的圓棍，像拉麵條一樣的反覆拉扯，讓糖內充滿空氣，大約十分鐘左右，使糖成為細管狀，待其冷卻後即成。將製作完成的糖蔥分剪成約3吋的長條狀，最後摻入花生粉即完成</p>
+<h3>延伸美食-糖蔥餅</h3>
+<div class="img"   >
+<img src="https://64.media.tumblr.com/9672d8c67867113dbeb768bb09d4a895/tumblr_oizbs2Ky4K1ufwxbio1_1280.jpg" width="500px" alt="糖蔥潤餅" class="demo">
+<figcaption>&#128314;糖蔥餅</figcaption>
+		</div>
+<p>&emsp;&emsp;一種用春捲餅皮包覆糖蔥的甜點。雖然叫糖蔥餅但並沒有任何蔥，原是一種潮汕地區的甜食，糖蔥餅的工藝約於1930年代傳入香港，更曾經是主要的街頭小食，不過如今已經不再普及。
+</p>
+<h1 id="88">椪糖</h1>
+<br>
+		<div class="img"   >
+<img src="https://tlife.thsrc.com.tw/s3/post/20210813-CInJS4wE9bDkhkciQYEphLTKaYSNFM2WDbeSIYIw.jpg" width="500px" alt="椪糖" class="demo">
+<figcaption>&#128314;碰糖</figcaption>
+		</div>
+    <h3>介紹</h3>
+    <p>
+        &emsp;&emsp;在各個國家有不同稱呼，可稱之為「膨糖」、「輕目燒」。
+        <h3>作法
+        </h3>
+        <p>&emsp;&emsp;將砂糖或三溫糖不加水（或以少量水）加熱並溶解，當糖水沸騰到125度後收乾，再迅速加入小蘇打快速攪拌，促進大量二氧化碳起泡融入椪糖之中使其迅速膨脹，冷卻時，將其硬化並以發泡和膨脹狀態塑形即可完成。</p>
+    </p>
+    <h3>韓式椪糖</h3>
+	<div class="img"   >
+    <img src="https://img.ltn.com.tw/Upload/food/page/2021/09/28/210928-11566-5-HyKmq.jpg" width="500px" alt="squid game" class="demo">
+	</div>
+    <p>&emsp;&emsp;韓式椪糖是一種用融化的糖和小蘇打製成的朝鮮半島糖果，970年代和1980年代流行的街頭小吃，至今仍作為古早味食品食用。
+做法大致跟台式椪糖差不多，但會將糖漿倒在平坦的表面上，壓平並用帶圖案的模具沖壓即可完成。在2021年netflix的原創影集《魷魚遊戲》出現，導致韓式椪糖在全球掀起一股流行。</p>
+	<div class="img"   >
+<img src="https://www.mirrormedia.com.tw/assets/images/20211006102006-b9244c63a50afb4cbe41bd89683d9cac-mobile.jpg" width="500px" alt="魷魚遊戲" class="demo">
+<figcaption>&#128314;《魷魚遊戲》出現的韓式椪糖</figcaption>
+		</div>
+<h3>製作椪糖影片</h3>
+<ol>
+    <li><figcaption>椪糖影片 </figcaption>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eINiCPC1Luc?start=27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</li>
+<li>
+<figcaption>韓式椪糖</figcaption>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_UURxoLw4B0?start=27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</li>
+      </ol>
+      <h1 id="4">切片糖</h1>
+	<div class="img">
+      <img src="https://cf.shopee.tw/file/d4f18d1fc223770b37ee9b9970f420f1" alt="切片糖" width="500px" class="demo">
+      <figcaption>&#128314;切片糖</figcaption>
+	</div>
+      <h3>介紹</h3>
+      <p>切片糖，也稱作手工糖，可塑造各種圖案。</p>
+      <h3>作法
+      </h3>
+      <p>
+        &emsp;&emsp;將糖融化後視口味(通常在非柑橘口味)放入蘋果酸，能使味道更強烈，再將糖漿倒出冷卻，冷卻後再逐步加入蘋果酸直到足夠為止。當糖果降溫治好塑形的溫度時使用「拉糖」技術多次延展，打入空氣可使糖果有更好的光澤；之後把糖果放在適當的位置組裝起來，並在加熱的桌子多次翻滾。最後用地心引力協讓糖果變成能入口大小，在將糖果切片即完成。
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8-3Xe7RMg3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>切片糖製作影片</p>
+        <h3>店家介紹</h3>
+        <ol>
+            <li><h4>Papabubble西班牙手工糖</h4>
+				<div class="img"   >
+            <img src="https://shoplineimg.com/5ee86f3e9e912f001824494d/5f082399ed63f40024ef4fd1/2200x.webp?source_format=jpg" width="1000px" alt="Papabubble西班牙手工糖" class="demo">
+				</div>
+            <p>&emsp;&emsp;有各種圖案的切片糖，也有結合東方的節慶設計造型，除了切片糖還有各種棒棒糖，位於台北市大安區安和路一段49巷15號1樓。
+                <br>官網: <a href="https://www.papabubbletaiwan.com/" class="link">https://www.papabubbletaiwan.com/</a>
+            </p>
+        </li>
+        <li><h4>Sticky
+        </h4>
+			<div class="img"   >
+    <img src="https://i.dailymail.co.uk/1s/2021/11/21/22/47065091-9923945-Determined_to_go_down_fighting_Mr_King_right_used_JobKeeper_paym-a-1_1637532731984.jpg" width="500px" alt="Sticky" class="demo">
+			</div>
+<p>
+    &emsp;&emsp;Sticky 是一群敬業的糖果工匠和雕刻家，致力於在世界任何地方製作同類產品中最好的產品。自 2001 年以來一直在澳大利亞製作精美的手工糖果，Sticky 是一家澳大利亞家族企業，目前已在其他國家設立分店。
+    <br>官網: <a href="https://sticky.com.au/" class="link">https://sticky.com.au/</a>
+
+</p></li>
+        </ol>
+		</div>
+	</main>
+	
+	<nav class="fav">
+		<center>
+			<div class="forums">
+				<a href="Review.html" target="_blank"><li>Review</li></a>
+				<a href="Reserve.html" target="_blank"><li>Reserve</li></a>
+				<a href="Report.html" target="_blank"><li>Report</li></a>
+			</div>
+		</center>
+	</nav>
+	
+	<footer class="feet">
+		<div class="foot left">
+			<a href="job.html" target="_blank"><li>幼一甲002&emsp;邱昱榕&emsp;111108002</li></a>
+			<a href="job.html" target="_blank"><li>心一甲049&emsp;林芷誼&emsp;111111049</li></a>
+			<a href="job.html" target="_blank"><li>藝一乙001&emsp;吳靖童&emsp;111115001</li></a>
+			<a href="job.html" target="_blank"><li>藝一乙014&emsp;曾&emsp;晨&emsp;111115014</li></a>
+			<a href="job.html" target="_blank"><li>藝一乙030&emsp;陳禹彤&emsp;111115030</li></a>
+		</div>
+		<div class="foot right">
+			<br>
+			<a href="https://goo.gl/maps/mQANWKQYrvqQiWWZ7"  target="_blank">地址：106台北市大安區和平東路二段134號國立臺北教育大學圖書館</a>
+			<a>電話號碼：02-6639-6688</a>
+			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">powered by sugar.&nbsp;&reg;</a>
+		</div>
+
+	</footer>
+
+  </body>
+</html>
